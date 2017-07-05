@@ -20,9 +20,9 @@ else
   echo "kubectl proxy STOPPED"
   echo "---"
   echo $CONTEXT
-  echo "Start | bash='nohup /Users/AdamWestbrook/Misc/google-cloud-sdk/bin/kubectl proxy &! exit' terminal=true"
+  echo "Start | bash='nohup ~/google-cloud-sdk/bin/kubectl proxy &! exit' terminal=true"
   echo "Switch Context"
   for i in $CONTEXTS; do
-  	echo "-- $i | bash='/Users/AdamWestbrook/Misc/google-cloud-sdk/bin/kubectl config use-context $i && exit' terminal=true"
+  	echo "-- $i | bash='~/google-cloud-sdk/bin/kubectl config use-context $i && exit' terminal=true"
   done
 fi
